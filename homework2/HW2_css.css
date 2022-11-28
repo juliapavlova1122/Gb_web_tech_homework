@@ -25,7 +25,10 @@ ol {
     color: rgb(11, 7, 36);
     font-family: 'CreepyGhost', sans-serif;
 }
-
+img {
+    width: 500px;
+  }
+  
 @font-face {
 	font-family: 'CreepyGhost';
 	src: url('../fonts/creepyghost.eot'); /* IE 9 Compatibility Mode */
