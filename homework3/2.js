@@ -5,11 +5,19 @@
 // let username = prompt("Как тебя зовут?");
 // console.log(`Привет, ${username}!`);
 
-let username = prompt("Как тебя зовут?");
+// const username = prompt("Как тебя зовут?");
+
+// function greatingUsername(username) {
+//     return (`Привет, ${username}!`);
+// }
+
+// console.log(greatingUsername(`${username}`));
+
+
+const username = prompt("Как тебя зовут?");
 
 function greatingUsername(username) {
-    return (`Привет, ${username}!`);
+    console.log(`Привет, ${username}!`);
 }
 
-console.log(greatingUsername(`${username}`))
-
+greatingUsername(username);

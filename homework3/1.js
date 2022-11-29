@@ -8,11 +8,19 @@
 // Примечания: Пользователь всегда вводит корректное число.
 // Советую округлить значение после рассчетов, так как в некоторых случаях может получиться "длинная дробь".
 
-const t = Number.parseInt(prompt("Введите температуру в градусах Цельсия:"));
-alert(`Температура в градусах Цельсия ${t} соответствует ${((9 / 5) * t + 32).toFixed(2)} по Фаренгейту`);
-function fahrenheit(number1) {  
-    return ((9 / 5) * t + 32).toFixed(2);
+// const celsium = Number.parseFloat(prompt("Введите температуру в градусах Цельсия:"));
+// alert(`Температура в градусах Цельсия ${celsium} соответствует ${((9 / 5) * celsium + 32).toFixed(2)} по Фаренгейту`);
+// function fahrenheit(number1) {  
+//     return ((9 / 5) * celsium + 32).toFixed(2);
+// }
+
+function convertCelsiumToFahrenheit(celsium) {
+    return ((9 / 5) * celsium + 32);
 }
+const celsium = Number.parseFloat(prompt("Введите температуру в градусах Цельсия:"));
+alert(`Температура в градусах Цельсия ${celsium} соответствует ${convertCelsiumToFahrenheit(celsium).toFixed(2)} по Фаренгейту`);
+
+
 
 
 
