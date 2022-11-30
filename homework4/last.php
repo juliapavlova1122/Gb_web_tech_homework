@@ -13,9 +13,9 @@ $skills = [
 ];
 
 $experience = [
-	['position' => 'Front End Developer', 'date1' => 'Jan - 2015', 'date2' => 'Current', 'description' => 'Фронтенд-разработчик связывает функционал и код сайта с его визуальной оболочкой и создает для пользователя удобный, корректно работающий продукт.'],
-	['position' => 'Web Developer / something.com', 'date1' => 'Mar - 2012', 'date2' => 'Dec - 2014','description' => 'Веб-разработчик создает новые сервисы и сайты или поддерживает и дополняет существующие. Он изучает задачу заказчика и помогает создать оптимальное решение, готовит код для фронтенда и бэкенда, тестирует его, исправляет ошибки и оценивает результаты.'],
-	['position' => 'Graphic Designer / designsomething.com', 'date1' => 'Jun - 2010', 'date2' => 'Mar - 2012','description' => 'Графический дизайнер с помощью визуального языка передает информацию и идеи, чтобы мотивировать людей к каким-либо действиям. Он создают визуальные концепты — изображения и целые системы изображений.'],
+	['position' => 'Front End Developer', 'date1' => date('Jan - 2015'), 'date2' => 'Current', 'description' => 'Фронтенд-разработчик связывает функционал и код сайта с его визуальной оболочкой и создает для пользователя удобный, корректно работающий продукт.'],
+	['position' => 'Web Developer / something.com', 'date1' => date('Mar - 2012'), 'date2' => 'Dec - 2014','description' => 'Веб-разработчик создает новые сервисы и сайты или поддерживает и дополняет существующие. Он изучает задачу заказчика и помогает создать оптимальное решение, готовит код для фронтенда и бэкенда, тестирует его, исправляет ошибки и оценивает результаты.'],
+	['position' => 'Graphic Designer / designsomething.com', 'date1' => date('Jun - 2010'), 'date2' => 'Mar - 2012','description' => 'Графический дизайнер с помощью визуального языка передает информацию и идеи, чтобы мотивировать людей к каким-либо действиям. Он создают визуальные концепты — изображения и целые системы изображений.'],
 ];
 
 
@@ -87,6 +87,8 @@ $experience = [
           <br>
         </div>
       </div><br>
+
+    <!-- End Left Column -->
     </div>
 
     <!-- Right Column -->
@@ -99,9 +101,19 @@ $experience = [
           <h5 class="w3-opacity"><b><?php echo $experience[$i]['position']; ?> </b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $experience[$i]['date1']; ?> - <span class="w3-tag w3-teal w3-round"><?php echo $experience[$i]['date2']; ?></span></h6>
           <p><?php echo $experience[$i]['description']; ?></p>
-          <?php endfor; ?>
           <hr>
         </div>
+        <!-- <div class="w3-container">
+          <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
+          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+        </div> -->
       </div>
 
       <div class="w3-container w3-card w3-white">
@@ -124,8 +136,14 @@ $experience = [
           <p>Bachelor Degree</p><br>
         </div>
       </div>
+
+    <!-- End Right Column -->
     </div>
+    
+  <!-- End Grid -->
   </div>
+  
+  <!-- End Page Container -->
 </div>
 
 <!-- Footer -->
