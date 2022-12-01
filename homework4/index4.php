@@ -13,9 +13,18 @@ $skills = [
 ];
 
 $experience = [
-	['position' => 'Front End Developer', 'date1' => 'Jan - 2015', 'date2' => 'Current', 'description' => 'Фронтенд-разработчик связывает функционал и код сайта с его визуальной оболочкой и создает для пользователя удобный, корректно работающий продукт.'],
-	['position' => 'Web Developer / something.com', 'date1' => 'Mar - 2012', 'date2' => 'Dec - 2014','description' => 'Веб-разработчик создает новые сервисы и сайты или поддерживает и дополняет существующие. Он изучает задачу заказчика и помогает создать оптимальное решение, готовит код для фронтенда и бэкенда, тестирует его, исправляет ошибки и оценивает результаты.'],
-	['position' => 'Graphic Designer / designsomething.com', 'date1' => 'Jun - 2010', 'date2' => 'Mar - 2012','description' => 'Графический дизайнер с помощью визуального языка передает информацию и идеи, чтобы мотивировать людей к каким-либо действиям. Он создают визуальные концепты — изображения и целые системы изображений.'],
+	['position' => 'Front End Developer', 
+  'dateStart' => 'Jan - 2015', 
+  'dateEnd' => 'Current', 
+  'description' => 'Фронтенд-разработчик связывает функционал и код сайта с его визуальной оболочкой и создает для пользователя удобный, корректно работающий продукт.'],
+	['position' => 'Web Developer / something.com', 
+  'dateStart' => 'Mar - 2012', 
+  'dateEnd' => 'Dec - 2014', 
+  'description' => 'Веб-разработчик создает новые сервисы и сайты или поддерживает и дополняет существующие. Он изучает задачу заказчика и помогает создать оптимальное решение, готовит код для фронтенда и бэкенда, тестирует его, исправляет ошибки и оценивает результаты.'],
+	['position' => 'Graphic Designer / designsomething.com', 
+  'dateStart' => 'Jun - 2010', 
+  'dateEnd' => 'Mar - 2012', 
+  'description' => 'Графический дизайнер с помощью визуального языка передает информацию и идеи, чтобы мотивировать людей к каким-либо действиям. Он создают визуальные концепты — изображения и целые системы изображений.'],
 ];
 
 
@@ -97,11 +106,13 @@ $experience = [
         <?php for($i = 0; $i < count($experience); $i++): ?>
         <div class="w3-container">
           <h5 class="w3-opacity"><b><?php echo $experience[$i]['position']; ?> </b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $experience[$i]['date1']; ?> - <span class="w3-tag w3-teal w3-round"><?php echo $experience[$i]['date2']; ?></span></h6>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $experience[$i]['dateStart']; ?> - 
+          <?php if ($i == 0): ?> <span class="w3-tag w3-teal w3-round"> <?php echo $experience[$i]['dateEnd']; ?> </span> <?php else: ?> <?php echo $experience[$i]['dateEnd']; ?> <?php endif ?></h6>
           <p><?php echo $experience[$i]['description']; ?></p>
+        </div>  
           <?php endfor; ?>
           <hr>
-        </div>
+        
       </div>
 
       <div class="w3-container w3-card w3-white">
