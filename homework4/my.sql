@@ -21,5 +21,5 @@ INSERT INTO students VALUES (0010, 'Aleksandr Molov', 19, 'Saint Petersburg');
 
 
 -- fetch 
-SELECT name FROM students WHERE age >= 18 and age < 30 and address = 'Moscow';
+SELECT name FROM students WHERE age >= 18 AND age < 30 AND address = 'Moscow';
 
